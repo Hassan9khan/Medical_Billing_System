@@ -1,9 +1,9 @@
 # app/routes/patients.py
 from fastapi import APIRouter, HTTPException, status, Depends
 from bson import ObjectId
-from schemas.patient import PatientCreate, PatientResponse, PatientUpdate
-from database import db
-from auth.security import get_current_user
+from app.schemas.patient import PatientCreate, PatientResponse, PatientUpdate
+from app.database import db
+from app.auth.security import get_current_user
 
 # We will eventually protect these routes with our JWT, but let's test them openly first.
 # router = APIRouter(prefix="/patient", tags=["Patient"])

@@ -1,9 +1,9 @@
 # app/routes/doctors.py
 from fastapi import APIRouter, HTTPException, status, Depends
 from bson import ObjectId
-from schemas.doctor import DoctorCreate, DoctorResponse, DoctorUpdate
-from database import db
-from auth.security import get_current_user
+from app.schemas.doctor import DoctorCreate, DoctorResponse, DoctorUpdate
+from app.database import db
+from app.auth.security import get_current_user
 
 router = APIRouter(
     prefix="/doctors", 

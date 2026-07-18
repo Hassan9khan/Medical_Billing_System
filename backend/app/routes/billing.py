@@ -2,9 +2,9 @@
 from fastapi import APIRouter, HTTPException, status, Depends
 from bson import ObjectId
 from datetime import datetime
-from schemas.billing import BillCreate, BillResponse
-from database import db
-from auth.security import get_current_user
+from app.schemas.billing import BillCreate, BillResponse
+from app.database import db
+from app.auth.security import get_current_user
 
 router = APIRouter(
     prefix="/bills", 

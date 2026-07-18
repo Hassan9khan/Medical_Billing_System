@@ -1,9 +1,9 @@
 # app/routes/services.py
 from fastapi import APIRouter, HTTPException, status, Depends
 from bson import ObjectId
-from schemas.service import ServiceCreate, ServiceResponse, ServiceUpdate
-from database import db
-from auth.security import get_current_user
+from app.schemas.service import ServiceCreate, ServiceResponse, ServiceUpdate
+from app.database import db
+from app.auth.security import get_current_user
 
 router = APIRouter(
     prefix="/services", 
