@@ -1,9 +1,9 @@
 # app/routes/auth.py
 from fastapi import APIRouter, HTTPException, status, Depends, Form
-from app.schemas.user import UserCreate, UserResponse, UserLogin  # Added UserLogin
-from app.schemas.token import Token
-from app.auth.security import get_password_hash, verify_password, create_access_token
-from app.database import db
+from schemas.user import UserCreate, UserResponse, UserLogin  # Added UserLogin
+from schemas.token import Token
+from auth.security import get_password_hash, verify_password, create_access_token
+from database import db
 
 router = APIRouter(prefix="/auth", tags=["Authentication"])
 

@@ -3,8 +3,8 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware  # 1. Import CORSMiddleware
 # from fastapi.openapi.docs import get_swagger_ui_html # for dark theme   
 from contextlib import asynccontextmanager
-from app.database import connect_to_mongo, close_mongo_connection
-from app.routes import auth, patients, doctors, services, billing, reports
+from database import connect_to_mongo, close_mongo_connection
+from routes import auth, patients, doctors, services, billing, reports
 
 # Lifespan context manager to handle startup and shutdown events
 @asynccontextmanager

@@ -4,7 +4,8 @@ import bcrypt
 from jose import jwt
 from datetime import datetime, timedelta
 from fastapi import Depends, HTTPException, status
-from fastapi.security import OAuth2PasswordBearer
+from security import OAuth2PasswordBearer
+# from fastapi.security import OAuth2PasswordBearer
 from jose import JWTError, jwt
 
 # Initialize bcrypt context
