@@ -22,7 +22,7 @@ app = FastAPI(
 )
 origins = [
     "http://localhost:5173",  # Your local Vite development server
-    "http://127.0.0.1:5173",
+    "https://medical-billing-frontend.vercel.app",
 ]
 
 app.add_middleware(
