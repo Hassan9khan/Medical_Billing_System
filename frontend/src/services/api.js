@@ -3,7 +3,7 @@ import axios from 'axios';
 
 // Create a centralized instance pointing to our FastAPI server
 const api = axios.create({
-  baseURL: 'http://127.0.0.1:8000',
+  baseURL: 'https://medical-billing-backend.vercel.app/',
 });
 
 // Intercept outgoing requests to attach the JWT token
